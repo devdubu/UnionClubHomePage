@@ -12,7 +12,7 @@ router.post('/', function(req, res) {
         console.log(resu.totalPosts);
         var totalpostnum = resu.totalPosts;
         
-        db.get().collection(req.body.category).insertOne({_id : totalpostnum+1, title: req.body.title, category:req.body.category, content: req.body.content}, function(err,resu) {
+        db.get().collection(req.body.category).insertOne({_id : totalpostnum+1, title: req.body.title, category:req.body.category, content: req.body.content, pwd:req.body.pwd}, function(err,resu) {
             console.log('저장완료');
         });
 

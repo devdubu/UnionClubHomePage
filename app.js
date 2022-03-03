@@ -7,28 +7,28 @@ var logger = require('morgan');
 
 // 메인 홈페이지
 var indexRouter = require('./routes/index');
-// 임원진
-var executiveRouter = require('./routes/executive');
-// 동아리 소개
-var introduceRouter = require('./routes/introduce');
-// 동아리 규칙
-var ruleRouter = require('./routes/rule');
-// 회의록
+// 총동아리연합회
+var unionclubRouter = require('./routes/unionclub');
+// 체육분과
+var physicalRouter = require('./routes/physical');
+// 전시교양분과
+var performanceRouter = require('./routes/performance');
+// 전시교양분과
+var artRouter = require('./routes/art');
+// 봉사분과
+var volunteerRouter = require('./routes/volunteer');
+// 종교분과
+var religionRouter = require('./routes/religion');
+// 서류/양식
+var documentRouter = require('./routes/document');
+// 동아리 활동보고
+var reportRouter = require('./routes/report');
+// 이달의 동아리
+var bestClubRouter = require('./routes/bestClub');
+// 동아리 캘린더
+var calenderRouter = require('./routes/calender');
+// 대표자 회의록
 var meetingRouter = require('./routes/meeting');
-// 프로젝트
-var projectRouter = require('./routes/project');
-// 웹
-var webRouter = require('./routes/web');
-// 모바일
-var mobileRouter = require('./routes/mobile');
-// 데이터 분석
-var dataAnalysisRouter = require('./routes/dataAnalysis');
-// AI
-var aiRouter = require('./routes/ai');
-// 질문 게시판
-var questionRouter = require('./routes/question');
-// 지원서 작성
-var applyRouter = require('./routes/apply');
 // 게시글
 var postRouter = require('./routes/post');
 // 게시글 작성
@@ -56,17 +56,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/executive', executiveRouter);
-app.use('/introduce', introduceRouter);
-app.use('/rule', ruleRouter);
+app.use('/unionclub', unionclubRouter);
+app.use('/physical', physicalRouter);
+app.use('/performance', performanceRouter);
+app.use('/art', artRouter);
+app.use('/volunteer', volunteerRouter);
+app.use('/religion', religionRouter);
+app.use('/document', documentRouter);
+app.use('/report', reportRouter);
+app.use('/bestClub', bestClubRouter);
+app.use('/calender', calenderRouter);
 app.use('/meeting', meetingRouter);
-app.use('/project', projectRouter);
-app.use('/web', webRouter);
-app.use('/mobile', mobileRouter);
-app.use('/dataAnalysis', dataAnalysisRouter);
-app.use('/ai', aiRouter);
-app.use('/question', questionRouter);
-app.use('/apply', applyRouter);
 app.use('/post', postRouter);
 app.use('/write', writeRouter);
 app.use('/add', addRouter);
