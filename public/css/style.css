@@ -1524,6 +1524,64 @@ a {
    width: 100%;
  }
 
+.list{
+  margin: auto;
+  width: 90%;
+}
+.list h1{
+  color: #525252;
+}
+.list hr{
+  border-color: #525252;
+  background-color: #525252;
+}
+.list-top{
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  border-bottom: #adadad solid;
+}
+.list-top-title{
+  float: left;
+  margin-left: 5%;
+  width: 50%;
+  
+}
+.list-top-writer{
+  margin-left: 5%;
+  float: left;
+  width: 40%;
+}
+.list-top-writer p{
+  float: right;
+  width: 150px;
+}
+
+.list-content-element{
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  border-bottom: #adadad solid;
+}
+.list-content-title{
+  float: left;
+  margin-left: 5%;
+  width: 50%;
+  
+}
+.list-content-writer{
+  margin-left: 5%;
+  float: left;
+  width: 40%;
+}
+.list-content-writer p{
+  float: right;
+  width: 150px;
+}
+.list-content-element:hover{
+  
+}
+
 
 /* 
   *************************************

@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET /apply */
 router.get('/', function(req, res) {
-  res.render('document');
+  res.render('secondlist');
 });
 
 module.exports = router;
