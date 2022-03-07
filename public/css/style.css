@@ -780,7 +780,7 @@ a {
    margin: auto;
    float: right;
    font-size: 20px;
-   color: white;
+   color: black;
    background-color: transparent;
    width: 80px;
    height: 30px;
@@ -1524,12 +1524,41 @@ a {
    width: 100%;
  }
 
+ /*
+  **********************************************
+  Second-List
+  **********************************************
+ */
+
 .list{
   margin: auto;
   width: 90%;
 }
+
 .list h1{
+  margin: 0;
   color: #525252;
+}
+.list-title{
+  float: left;
+}
+.list .write-btn{
+  
+  height: 40px;
+  float: right;
+}
+
+
+.list .write-btn .write-button {
+  text-align: center;
+  display: inline;
+  font-size: 15px;
+  color: black;
+  background-color: transparent;
+  width: 50px;
+  height: 40px;
+  font-weight: 100;
+  border: none;
 }
 .list hr{
   border-color: #525252;
@@ -1579,7 +1608,7 @@ a {
   width: 150px;
 }
 .list-content-element:hover{
-  
+  background-color: #ebebeb;
 }
 
 

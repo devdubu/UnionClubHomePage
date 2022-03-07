@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/style.css" rel="stylesheet">
   <title>IMPORT</title>
@@ -70,10 +71,31 @@
 
 </script>
 
+ <!-- Modal -->
+ <div id="Modal" class="modal">
+  <form class="modal-content animate" id="writeForm" action="/write" method="post">
+      <div class="xcontainer">
+          <span onclick="document.getElementById('Modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+
+      <div class="modalContainer">
+          <input type="password" class="pwd" placeholder="Enter Password" name="pwd" required>
+          <button type="submit" class="modalButton">Login</button>
+      </div>
+  </form>
+</div>
+
 <div class="list">
-  <div class="list-title">
-    <h1>제목</h1>
+  <div>
+    <div class="list-title">
+      <h1>제목</h1>
+    </div>
+    <div class="write-btn">
+      <button class="write-button" onclick="showModal()"><i class="far fa-edit"></i></button>
+    </div>
   </div>
+  
+  <div style="float: none; height: 40px;"></div>
   <hr>
   <div class="list-top">
     <div class="list-top-title">
