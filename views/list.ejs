@@ -45,16 +45,18 @@
             </ul>
         </div>
       </nav>
-    </header>s
+    </header>
     <script>
         function showModal() {
             var modal = document.getElementById("Modal");
             modal.style.display = "block";
+            $('body').css('background-color','rgba(0,0,0,0.4)')
         }
 
         function closeModal() {
             var modal = document.getElementById("Modal");
             modal.style.display = "none";
+            $('body').css('background-color','')
         }
 
         function openMenu(){
@@ -94,7 +96,7 @@
     <div id="Modal" class="modal">
         <form class="modal-content animate" id="writeForm" action="/write" method="post">
             <div class="xcontainer">
-                <span onclick="document.getElementById('Modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <span onclick="closeModal()" class="close" title="Close Modal">&times;</span>
             </div>
       
             <div class="modalContainer">
@@ -108,8 +110,8 @@
     <!--상단 게시판 제목-->
     <div class="contents">
         <div class="title">
-            <% if(data.length > 0){ %>
-            <h2><%= data[0].category %></h2>
+            
+            <h2>체육분과</h2>
             <sup class="total">12</sup>
         </div>
         <div class="write-btn">
@@ -121,13 +123,12 @@
                
                 <!--프로젝트 게시물 전체-->
                 <div class="project-cards">
-                    <% for (var i = 0; i< data.length;i++){ %>
+                    <% for (var i = 0; i< 5;i++){ %>
                     <!-- 프로젝트 게시물 개별 -> 한번에 6개 보여줌-->
                         <div class="project-card-component">
-                            <a class="project-views" href="<%= process.env.SERVER_HOST %>/post/<%=data[i]._id%>?category=<%=data[i].category%>">
-                                <img src="../images/project.png" alt="" class="project-thumbnail">
-                                <p class="name"><%= data[i].title %></p>
-                                <p class="time">2022</p>
+                            <a class="project-views" href="">
+                                <img src="../images/체육분과/5체육분과.jpg" alt="" class="project-thumbnail">
+                                <p class="name">동아리명</p>
                             </a>
                             <div class="links">
                                 <div class="link-item">
@@ -144,11 +145,6 @@
                     <p>Load more</p>
                     <i class="fas fa-chevron-down"></i>
                 </div>
-                <% }else{ %>
-                    <script>
-                        alert('빈 게시글 입니다.');
-                    </script>
-                <% } %>
             </div>
         </div>
     </div>
