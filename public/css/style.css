@@ -344,7 +344,7 @@ span.pwd {
     font-size: 30px; 
 }
 .copyright {
-  width: 290px;
+  width: 300px;
   margin: auto;
 }
 
@@ -357,8 +357,44 @@ span.pwd {
 
 /* 메인 페이지 css 끝 */
 
+
 /****************************/
-/* 게시글 페이지 css 시작 */
+
+
+  /* 총동아리페이지 css 시작 */
+
+  
+/****************************/
+
+.unionclub{
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+.unionclub-title{
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.unionclub-groupimg{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.unionclub-groupimg img{
+  width: 100%;
+}
+
+
+
+/****************************/
+
+
+  /* 게시글 페이지 css 시작 */
+
+
+/****************************/
 
 .post {
   width: 70%;

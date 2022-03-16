@@ -8,7 +8,7 @@
   <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
 
-  <title>Import</title>
+  <title>SKETCH</title>
 </head>
 <body>
   <div class="write-page">
@@ -29,23 +29,19 @@
       <button class="back-color" >"</button>
       <button class="back-color symbol-color">링크</button>
       <button  class="back-color" id="btnImage">
-        <i style="font-size: 20px; z-index: 10;" class="far fa-image"></i>
-        <input class="image-selector back-color" id="imgSelector" type="file" accept="image/*"/>
+      <button  class="back-color" id="btnImage"><i style="font-size: 20px;" class="far fa-image"></i></button>
+      <input  class="image-selector" id="imgSelector" type="file"/>
       </button>
     </div>
       <div class="write-category">
         <select class="back-color symbol-color" name=category onchange="selectBoxChange(this.value)">
           <option value="" selected disabled hidden >카테고리</option>
-          <option value="meetingnote">회의록</option>
-          <option value="project">프로젝트</option>
-          <option value="web">Web</option>
-          <option value="mobile">Mobile</option>
-          <option value="dataanalysis">DataAnalysis</option>
-          <option value="ai">AI</option>
+          <option value="document">서류/양식</option>
+          <option value="report">동아리활동보고</option>
         </select>
       </div>
     
-    <div class="deletePwd" >
+    <div class="deletePwd">
       <input class="back-color" id="deletepwd" type="text" placeholder="비밀번호를 입력하시오">
     </div>
 

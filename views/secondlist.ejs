@@ -8,7 +8,7 @@
   <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/style.css" rel="stylesheet">
-  <title>IMPORT</title>
+  <title>SKETCH</title>
 </head>
 <body>
   <header>
@@ -45,6 +45,17 @@
   </nav>
 </header>
 <script>
+  function showModal() {
+            var modal = document.getElementById("Modal");
+            modal.style.display = "block";
+            $('body').css('background-color','rgba(0,0,0,0.4)')
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("Modal");
+            modal.style.display = "none";
+            $('body').css('background-color','')
+        }
     
     function openMenu(){
         $('.topMenu').css('display','block');
@@ -122,19 +133,17 @@
 <div class="footer">
   <div class="sns">
     <ul class="snss">
-      <li><a href="https://github.com/Import-hanbat"><i style="color: white;" class="fab fa-github"></i></a></li>
-      <li><a href="https://www.instagram.com/import_hanbat/"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://www.facebook.com/Import-110047964872044"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/37th_sketch/"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="http://pf.kakao.com/_CxgZub"><img src="../images/kakaoimg.png" width="35px" alt=""></a></li>
     </ul>
   </div>
     <div class="copyright">
-        <p>Copyright 2022. Import all right reserved.</p>
+        <p>Copyright 2022. SKETCH all right reserved.</p>
     </div>
-      <div class="address">
-        <p>대전광역시 유성구 동서대로 125</p>
-      </div>
-  </div>
-
+    <div class="address">
+        <p>대전광역시 유성구 동서대로 125 동아리관 N12동 200호</p>
+    </div>
+</div>
 
 </body>
 </html>
