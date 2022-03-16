@@ -1,5 +1,5 @@
 const mongoClient = require('mongodb').MongoClient;
-const mongoDbUrl = 'mongodb+srv://import:import1015@cluster0.a1cx0.mongodb.net/UnionHomePage?retryWrites=true&w=majority';
+const mongoDbUrl = 'url';
 let mongodb;
 
 function connect(callback){
